@@ -1,0 +1,416 @@
+/*
+Theme Name: Hermit
+Theme URI: https://wordpress.org/themes/twentysixteen/
+Author: Nhienphan
+Author URI: https://nhienphan.com
+Description: Theme for hermit
+Version: 1.2
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: 
+Text Domain: 
+This theme, like WordPress, is licensed under the GPL.
+*/
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700,700italic,900&subset=latin,vietnamese,cyrillic-ext,cyrillic,latin-ext,greek-ext,greek);
+body{
+	font-family: 'Roboto', sans-serif;
+	background: url('image/bg-main.jpg') left top; 
+}
+
+.container-inner{
+	margin: 0 auto;
+}
+
+.bg-default{
+	background: #FFF;
+}
+.bg-gray{
+	background: #ececec;
+}
+.full-width-img img{
+	width: 100%;
+}
+#page{
+
+}
+.site-inner{
+
+}
+
+.title-red, .title-white{
+	text-transform: uppercase;
+	padding: 5px 0;
+	margin: 20px 0;
+	font-size: 1.2rem;
+	display: inline-block;
+}
+
+.title-red{
+	color: #c10202;
+	border-bottom: 1px solid #c10202;
+}
+.title-white{
+	color: #FFF;
+	border-bottom: 1px solid #FFF;
+}
+
+#top{
+	background: #000;
+	position: relative;
+}
+
+
+.mega-logo{
+	width: 162px !important;
+	position: relative;
+	a{
+		width: 162px !important;
+		display: block;
+		background: url('image/logo.jpg') !important;
+		height: 98px !important;
+		position: absolute !important;
+		z-index: 99999;
+		text-indent: -99999px;
+		top: -36px !important;
+	}
+	
+}
+
+.main{
+	
+	padding-top: 50px;
+}
+.bottom{
+	background: url('image/bg-bottom.png') no-repeat bottom right; 
+	padding-bottom: 27px;
+}
+
+
+/**
+* Main
+*/
+
+
+#hermit{
+	position: relative;
+	margin: 0 auto;
+	display: block;
+	width: 829px;
+	#cam2-section{
+		width: 620px;
+		#bottom-cam2-section{
+			background: #ef3329;
+			color: #FFF;
+			margin-bottom: 75px;
+			&:after{
+				height: 0;
+				width: 620px;
+				content: "";
+				position: absolute;
+				border-top: 75px solid #ef3329;
+				border-left: 75px solid transparent;
+			}
+
+			#cam2-section-content{
+				padding-top: 25px;
+				padding-left: 45px;
+	
+				width: 60%;
+				h3{
+					color: #FFF;
+					text-transform: uppercase;
+					font-weight: 500;
+				}
+				p{
+					margin-bottom: 0;
+					font-size: 13px;
+				}
+			}
+			
+		}
+	}
+
+	#hermit-section{
+		position: absolute;
+		top: 0px;
+		width: 420px;
+		left: 409px;
+		background: #FFF;
+		
+		&:after{
+				height: 0;
+				width: 420px;
+				content: "";
+				position: absolute;
+				border-top: 75px solid #FFF;
+				border-left: 75px solid transparent;
+			}
+
+		#hermit-section-content{
+			padding: 20px 40px 0px;
+			h3{
+				text-transform: uppercase;
+			}
+			p{
+				font-size: 13px;
+			}
+		}
+	}
+}
+
+#about-home{
+	background: url('image/bg-about-section.png') no-repeat center center;
+	margin-bottom: 60px;
+	height: 358px;
+	#banner-about{
+		margin-top: 90px;
+	}
+	#content-about{
+		h3{
+			text-transform: uppercase;
+			color: #000;
+			margin-top: 140px;
+			font-weight: 800;
+			font-size: 36px;
+		}
+		p{
+			color: #FFF;
+			margin-top: 50px;
+		}
+	}
+}
+
+
+.product-items{
+	.prod-name{
+		text-align: center;
+		background: #000;
+		padding: 10px 0;
+		height: 65px;		
+		a{
+			color: #FFF;
+			text-transform: uppercase;
+			font-size: 13px;
+			font-weight: 500;
+
+		}
+	}
+	.prod-img{
+		img{
+			max-width: 100%;
+			height: auto;
+		}
+	}
+	margin-bottom: 30px;
+}
+.content-inner{
+	padding: 30px;
+}
+/**
+* Contact
+*/
+
+#contact-page{
+	color: #FFF;
+}
+
+/**
+* Footer
+*/
+
+footer{
+	background: url('image/bg-footer.png');
+	padding-top: 65px;
+	padding-bottom: 75px;
+	color: #FFF;
+	
+	font-size: 13px;
+
+	.widget-footer-title{
+		font-size: 13px;
+		text-transform: uppercase;
+	}
+
+
+	.menu-footer-block{
+		
+		ul{
+			li{
+				a{
+					color: #FFF;
+					font-size: 13px;
+				}
+			}
+		}
+	}
+	
+}
+
+
+// Extra small devices (portrait phones, less than 34em)
+@media (max-width: 33.9em) { 
+
+	.mega-logo{
+		display: none !important;
+	}
+	#hermit{
+		width: 100%;
+		img{
+			max-width: 100%;
+		}
+		#cam2-section{
+			width: 100%;
+			#bottom-cam2-section{
+				 #cam2-section-content{
+			 		padding-top: 25px;
+			 	    padding-left: 20px;
+			 	    width: 100%;
+			 	    padding-right: 20px;
+			 	    
+				 }
+				 &:after{
+			 	    	width: 100%;
+			 	    	border-top: 40px solid #ef3329;
+    					border-left: 40px solid transparent;
+
+			 	    }
+			}	 
+		}
+		#hermit-section{
+			position: relative;
+			top:auto;
+			width: 100%;
+			left: auto;
+			#hermit-section-content{
+				padding-bottom: 10px;
+			    
+			}
+			&:after{
+				width: 100%;
+	 	    	border-top: 40px solid #FFF;
+				border-left: 40px solid transparent;
+			}
+		}
+	}
+
+	#about-home{
+		#content-about{
+			h3{
+				margin-top: 64px;
+				text-align: center;
+			}
+			p{
+				margin-top: 20px;
+			}
+		} 
+	} 
+}
+
+@media  (max-width: 47.9em){
+	
+} 
+
+// Small devices (landscape phones, less than 48em)
+@media  (min-width: 48em) and (max-width: 61.9em){
+	
+	#hermit{
+		max-width: 720px;
+		#cam2-section{
+			width: 400px;
+
+			#bottom-cam2-section{
+				#cam2-section-content{
+					width: 70%;
+				}
+				
+				&:after{
+					width: 400px;
+				}
+			}
+		}
+		#hermit-section{
+			left: 300px;
+			&:after{
+				
+			}
+		}
+	}
+	#about-home #content-about h3{
+		font-size: 32px;
+	}
+
+}
+
+@media (min-width: 62em){
+	.container-inner{
+		width: 88%;
+	}
+}
+// Medium devices (tablets, less than 62em)
+
+
+// Large devices (desktops, less than 75em)
+@media (max-width: 74.9em) {  }
+
+.text-white{
+  color: #FFF;
+}
+.hermit-title-icon{
+
+	border-bottom-style: solid;
+	margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom-width:1px;
+    h3{
+      text-transform: uppercase;
+      font-weight: 500;
+      margin-top:10px;
+    }
+}
+
+.cats-tax{
+	list-style: none;
+	h3{
+		font-size: 14px;
+		text-transform: uppercase;
+		border-bottom: 1px solid #d1d1d1;
+		padding-bottom: 10px;
+	}
+	ul{
+		margin: 0;
+		padding:  5px 15px;
+			li{
+				a{
+					color: #333;
+				}
+			}
+		}
+	border: 1px solid #d1d1d1;
+	padding: 15px;
+}
+.tax-danh-muc{
+	.product-items{
+		border: 1px solid #d1d1d1;
+		.prod-img{
+			padding: 5px;
+		}
+	}
+}
+
+#horizontal-scroller{
+	margin-bottom: 30px;
+}
+
+.wpcf7-form{
+	background: url('image/bg-contact-form.png') no-repeat top right;
+}
+
+#contact-address{
+	background: url('image/bg-contact-address.png') no-repeat top center;
+}
+
+.wpcf7-submit{
+	color: #333;
+    padding: 5px 50px;
+    border: none;
+}

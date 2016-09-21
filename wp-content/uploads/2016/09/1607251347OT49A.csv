@@ -1,0 +1,2 @@
+﻿id_payment,id_transaction,date_log,modreg,modregInit,external_ref,offer_type,guarantee,scopus_id,id_invoice,id_client,IP,country,schedule_num,schedule_date,state,internal_state,info4,id_record,currency,bank_direct_payment,bank_identification_number,secureMethod,schedule_amount,total_amount,info1,info2,info3
+117089,15292,2016-09-05 15:09:42.713,CC1X3DVN,VISA,NULL,NULL,0,1607251347OT49A,283534030,0000000GUP6D,14.161.32.116,VN   ,1,2016-07-25 00:00:00.000,NULL,3,NULL,0x0000000000D9EE6B,VND,0,436438,1,33800000,33800000,1100007351,NULL,NULL
